@@ -1,0 +1,41 @@
+:root {
+  color-scheme: dark;
+  --bg: #07080c;
+  --surface: #101217;
+  --surface-soft: #171a21;
+  --text: #f7f7f7;
+  --muted: #a7b0bd;
+  --accent: #e50914;
+  --accent-2: #1fb6a6;
+  --accent-3: #f3c45d;
+  --line: rgba(255, 255, 255, 0.12);
+  --panel: rgba(15, 17, 23, 0.85);
+  --panel-strong: rgba(9, 10, 14, 0.94);
+  --card-bg: rgba(16, 18, 23, 0.92);
+  --input-bg: rgba(0, 0, 0, 0.35);
+  --btn-sec-bg: rgba(255, 255, 255, 0.08);
+  --btn-sec-text: #f7f7f7;
+  --btn-bright-bg: #ffffff;
+  --btn-bright-text: #05070c;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #f4f6fb;
+  --surface: #ffffff;
+  --surface-soft: #eef2f8;
+  --text: #0f172a;
+  --muted: #475569;
+  --accent: #e50914;
+  --accent-2: #0d9488;
+  --accent-3: #d97706;
+  --line: rgba(15, 23, 42, 0.12);
+  --panel: rgba(255, 255, 255, 0.88);
+  --panel-strong: rgba(255, 255, 255, 0.96);
+  --card-bg: #ffffff;
+  --input-bg: rgba(241, 245, 249, 0.9);
+  --btn-sec-bg: rgba(15, 23, 42, 0.06);
+  --btn-sec-text: #0f172a;
+  --btn-bright-bg: #0f172a;
+  --btn-bright-text: #ffffff;
+}
