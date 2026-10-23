@@ -1,33 +1,38 @@
 # MovieVerse Client
 
-Public React application for browsing titles, search, reviews, profiles, favourites and watchlists.
+The MovieVerse Client is a public-facing React application designed for movie exploration, title searches, content reviews, user profile management, and organization of favorites and watchlists.
 
-## Stack
+## Technology Stack
 
-React, Vite, React Router, Axios, Tailwind CSS and Lucide.
+The application is built using the following technologies: React, Vite, React Router, Axios, Tailwind CSS, and Lucide.
 
-## Structure
+## Project Structure
 
-`src/api` contains the Axios client; `components` reusable UI; `context` shared session/theme/toast/storefront state; `pages` route screens; `routes` authorization; `utils` shared helpers.
+- **`src/api`**: Contains the Axios instance for API interactions.
+- **`components`**: Organizes reusable UI components for consistent design across the application.
+- **`context`**: Manages shared state for session data, theme preferences, toast notifications, and storefront data.
+- **`pages`**: Consists of screens mapped to various application routes.
+- **`routes`**: Handles authentication and authorization protocols.
+- **`utils`**: Provides utility functions for general application needs.
 
-## Commands
+## Available Commands
+
+To manage the project, the following terminal commands can be executed:
 
 ```bash
-npm install
-npm run dev
-npm run lint
-npm run build
-npm run preview
+npm install          # Install dependencies
+npm run dev          # Start the development server
+npm run lint         # Run linters for code quality checks
+npm run build        # Build the application for production
+npm run preview      # Preview the built application
 ```
 
-## Environment
+## Environment Variables
+
+Specify the following environment variable in the `.env` file:
 
 ```env
-VITE_API_ORIGIN=https://api.example.com
+VITE_API_ORIGIN=http://localhost:5000
 ```
 
-The origin defaults to `http://localhost:5000` locally and is required for production builds. Do not expose server secrets in Vite variables.
-
-## Deployment
-
-Build with `npm run build`, deploy `dist/` with SPA fallback, and configure the server CORS policy for this deployed origin. Route screens are lazily loaded; shared providers and protected routes are composed in `src/App.jsx`.
+The default local development origin is set to `http://localhost:5000`, which is later adjusted for production environments. Ensure that no sensitive server information is exposed in Vite environment variables.
